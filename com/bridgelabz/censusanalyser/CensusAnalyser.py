@@ -11,8 +11,8 @@ class CensusAnalyzer:
 
     def record_counter(self):
         """
-            :return: number of records in file
-            """
+        :return: number of records in file
+        """
         try:
             col_names = repr(self.obj).split(",")
             data = pd.read_csv(self.path, usecols=col_names)
