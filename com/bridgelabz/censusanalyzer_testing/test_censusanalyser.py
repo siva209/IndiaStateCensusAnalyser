@@ -12,6 +12,7 @@ WRONG_FILE_DELIMITER = "C:/Users/SRS/Downloads/IndiaStateCensusAnalyser/Data/Ind
 # Test Case 1.1-To ensure the number of records
 def test_check_file_record():
     csv_loader = CensusAnalyzer(FILE_PATH)
+    
     assert csv_loader.record_counter() == 29
 
 
